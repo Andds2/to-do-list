@@ -1,0 +1,145 @@
+.content-tarefas{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+}
+
+.content-tarefas-prioridade{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tarefa-prioridade{
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.baixa{
+    border: 1px solid #C1D8EB;
+}
+
+.media{
+    border: 1px solid #92BBDD;
+}
+
+.alta{
+    border: 1px solid #639ECF;
+}
+
+.tarefa-bar{
+    width: 100%;
+    height: 30px;
+    border-radius: 7px 7px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.baixa > .tarefa-bar{
+    background-color: #C1D8EB;
+}
+
+.media > .tarefa-bar{
+    background-color: #92BBDD;
+}
+
+.alta > .tarefa-bar{
+    background-color: #639ECF;
+}
+
+.tarefa-em-andamento > .tarefa-bar{
+    background-color: #eaba6b;
+}
+
+.tarefa-finalizada > .tarefa-bar{
+    background-color: #a7d3a6;
+}
+
+.baixa > .tarefa-bar > button{
+    border: 1px solid #81919e;
+    color: #81919e;
+}
+
+.media > .tarefa-bar > button{
+    border: 1px solid #4e6475;
+    color: #4e6475;
+}
+
+.alta > .tarefa-bar > button{
+    border: 1px solid #3a5c77;
+    color: #3a5c77;
+}
+
+.btn-add, .btn-inf{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    margin-inline: 10px;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.baixa > .tarefa-bar > .btn-add:hover,
+.media > .tarefa-bar > .btn-add:hover,
+.alta > .tarefa-bar > .btn-add:hover{
+    color: #fafafa;
+    border: 1px solid #fafafa;
+}
+
+.tarefa-em-andamento{
+    width: 100%;
+    border: 1px solid #eaba6b;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tarefa-finalizada{
+    width: 100%;
+    border: 1px solid #a7d3a6;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tarefa-sep{
+    width: 25%;
+    margin-inline: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tarefa-sep > h1{
+    font-size: 26px;
+}
+
+.tarefa-sep > .title-finalizada{
+    color: #a7d3a6;
+}
+
+.tarefa-sep > .title-em-andamento{
+    color: #eaba6b;
+}
+
+.tarefa-sep > .title-a-fazer{
+    color: #639ECF;
+}

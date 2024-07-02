@@ -1,0 +1,29 @@
+### get
+GET http://localhost:3001/tarefa/prioridade
+
+### get status
+GET http://localhost:3001/tarefa/status
+
+### post
+POST http://localhost:3001/tarefa
+Content-Type: application/json
+
+{
+    "titulo": "Teste 12",
+    "descricao": "Lorem ipsum dolor sit amet.",
+    "prioridade": "Alta",
+    "status": "A Fazer",
+    "data": "2024-09-20"
+}
+
+###
+DELETE http://localhost:3001/tarefa/6
+
+
+### 
+PATCH http://localhost:3001/tarefa/12
+Content-Type: application/json
+
+{
+    "titulo": "Teste 13"
+}

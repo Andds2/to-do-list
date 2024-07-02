@@ -1,0 +1,227 @@
+.tarefa-conteudo{
+    width: 85%;
+    height: 70px;
+    padding: 20px;
+    margin-block: 10px;
+    background-color: #0C141D;
+    border-radius: 10px;
+    user-select: none;
+    overflow: hidden;
+    transition: height .4s;
+}
+
+.tarefa-conteudo:hover{
+    height: 120px;
+    background-color: #121E2B;
+}
+
+.tarefa-conteudo.Baixa-A.Fazer:hover .tarefa-titulo,
+.tarefa-conteudo.Baixa-A.Fazer:hover .tarefa-status,
+.tarefa-conteudo.Baixa-A.Fazer:hover .tarefa-data{
+    color: #C1D8EB;
+}
+
+.tarefa-conteudo.Media-A.Fazer:hover .tarefa-titulo,
+.tarefa-conteudo.Media-A.Fazer:hover .tarefa-status,
+.tarefa-conteudo.Media-A.Fazer:hover .tarefa-data{
+    color: #92BBDD;
+}
+
+.tarefa-conteudo.Alta-A.Fazer:hover .tarefa-titulo,
+.tarefa-conteudo.Alta-A.Fazer:hover .tarefa-status,
+.tarefa-conteudo.Alta-A.Fazer:hover .tarefa-data{
+    color: #639ECF;
+}
+
+.tarefa-data{
+    text-align: right;
+}
+
+.tarefa-titulo{
+    font-size: 20px;
+    color: #D7DDEA;
+    transition: all .4s;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.tarefa-descricao{
+    color: #D7DDEA;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+}
+
+.tarefa-status, .tarefa-data{
+    color: #D7DDEA;
+    transition: all .4s;
+}
+
+.tarefa-btn{
+    display: none;
+    transition: .4s;
+}
+
+.tarefa-conteudo:hover .tarefa-btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.btn-hover{
+    transition: width .4s;
+    width: 0;
+    overflow: hidden;
+}
+
+.tarefa-conteudo.Baixa-A.Fazer > 
+.tarefa-btn > 
+.tarefa-btn-btn{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #C1D8EB;
+    background-color: transparent;
+    color: #C1D8EB;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .4s;
+    overflow: hidden;
+}
+
+.tarefa-conteudo.Baixa-A.Fazer > 
+.tarefa-btn > 
+.tarefa-btn-btn:hover{
+    width: 100px;
+}
+
+.tarefa-conteudo.Media-A.Fazer > 
+.tarefa-btn > 
+.tarefa-btn-btn{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #92BBDD;
+    background-color: transparent;
+    color: #92BBDD;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .4s;
+    overflow: hidden;
+}
+
+.tarefa-conteudo.Media-A.Fazer > 
+.tarefa-btn > 
+.tarefa-btn-btn:hover{
+    width: 100px;
+}
+
+.tarefa-conteudo.Alta-A.Fazer > 
+.tarefa-btn > 
+.tarefa-btn-btn{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #639ECF;
+    background-color: transparent;
+    color: #639ECF;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .4s;
+    overflow: hidden;
+}
+
+.tarefa-conteudo.Alta-A.Fazer > 
+.tarefa-btn > 
+.tarefa-btn-btn:hover{
+    width: 100px;
+}
+
+.tarefa-conteudo.Baixa-Em.Andamento > .tarefa-btn > .tarefa-btn-btn,
+.tarefa-conteudo.Media-Em.Andamento > .tarefa-btn > .tarefa-btn-btn,
+.tarefa-conteudo.Alta-Em.Andamento  > .tarefa-btn > .tarefa-btn-btn{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #eaba6b;
+    background-color: transparent;
+    color: #eaba6b;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .4s;
+    overflow: hidden;
+}
+
+.tarefa-conteudo.Baixa-Em.Andamento > .tarefa-btn > .tarefa-btn-btn:hover,
+.tarefa-conteudo.Media-Em.Andamento > .tarefa-btn > .tarefa-btn-btn:hover,
+.tarefa-conteudo.Alta-Em.Andamento  > .tarefa-btn > .tarefa-btn-btn:hover{
+    width: 100px;
+}
+
+.tarefa-conteudo.Baixa-Em.Andamento:hover .tarefa-titulo,
+.tarefa-conteudo.Baixa-Em.Andamento:hover .tarefa-status,
+.tarefa-conteudo.Baixa-Em.Andamento:hover .tarefa-data,
+.tarefa-conteudo.Media-Em.Andamento:hover .tarefa-titulo,
+.tarefa-conteudo.Media-Em.Andamento:hover .tarefa-status,
+.tarefa-conteudo.Media-Em.Andamento:hover .tarefa-data,
+.tarefa-conteudo.Alta-Em.Andamento:hover .tarefa-titulo,
+.tarefa-conteudo.Alta-Em.Andamento:hover .tarefa-status,
+.tarefa-conteudo.Alta-Em.Andamento:hover .tarefa-data{
+    color: #eaba6b;
+}
+
+.tarefa-conteudo.Baixa-Finalizada > .tarefa-btn > .tarefa-btn-btn,
+.tarefa-conteudo.Media-Finalizada > .tarefa-btn > .tarefa-btn-btn,
+.tarefa-conteudo.Alta-Finalizada  > .tarefa-btn > .tarefa-btn-btn{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #a7d3a6;
+    background-color: transparent;
+    color: #a7d3a6;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .4s;
+    overflow: hidden;
+}
+
+.tarefa-conteudo.Baixa-Finalizada > .tarefa-btn > .tarefa-btn-btn:hover,
+.tarefa-conteudo.Media-Finalizada > .tarefa-btn > .tarefa-btn-btn:hover,
+.tarefa-conteudo.Alta-Finalizada  > .tarefa-btn > .tarefa-btn-btn:hover{
+    width: 100px;
+}
+
+.tarefa-conteudo.Baixa-Finalizada:hover .tarefa-titulo,
+.tarefa-conteudo.Baixa-Finalizada:hover .tarefa-status,
+.tarefa-conteudo.Baixa-Finalizada:hover .tarefa-data,
+.tarefa-conteudo.Media-Finalizada:hover .tarefa-titulo,
+.tarefa-conteudo.Media-Finalizada:hover .tarefa-status,
+.tarefa-conteudo.Media-Finalizada:hover .tarefa-data,
+.tarefa-conteudo.Alta-Finalizada:hover .tarefa-titulo,
+.tarefa-conteudo.Alta-Finalizada:hover .tarefa-status,
+.tarefa-conteudo.Alta-Finalizada:hover .tarefa-data{
+    color: #a7d3a6;
+}
+
+.tarefa-btn-btn:hover .btn-hover{
+    margin-right: 8px;
+    width: auto;
+}
+
+.tarefa-btn > button{
+    z-index: 999;
+}
