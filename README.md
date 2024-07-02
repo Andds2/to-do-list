@@ -13,7 +13,7 @@ npm install @mui/material @emotion/react @emotion/styled
 npm install react-icon
 ```
 
-## NestJS (./server)
+### NestJS (./server)
 
 **Extensões utilizadas**
 ```
@@ -23,7 +23,7 @@ npm i typeorm @nestjs/typeorm
 npm i class-validator
 npm i class-transformer
 ```
-## Banco de Dados 
+### Banco de Dados 
 
 **O modelo do banco de dados se encontra no diretorio:**
 >*./server/bd/tarefa.sql*
